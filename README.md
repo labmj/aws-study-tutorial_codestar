@@ -39,7 +39,25 @@
 ![image](https://user-images.githubusercontent.com/79297534/110265536-1c1d4380-7fff-11eb-92e4-28d360bfd039.png)
 ![image](https://user-images.githubusercontent.com/79297534/110265622-5555b380-7fff-11eb-88fa-7befc4d06362.png)
 
+### master브랜치 template.yml 파일 변경
+- CodeStar는 CloudFormation 서비스로 인프라 리소스를 관리함
+- Resources: LambdaExecutionRole: Properties: RoleName의 'CodeStar-${ProjectId}-Execution${Stage}'값에 -staging을 추가해 수정하여 람다 실행 권한을 별도 생성해줌
+
+![image](https://user-images.githubusercontent.com/79297534/110273776-a9b55f00-8010-11eb-8fe8-c9fbdde24418.png)
+![image](https://user-images.githubusercontent.com/79297534/110273827-c81b5a80-8010-11eb-89f1-1c7a577a8143.png)
+
+### CloudFormation이란?
+- CloudFormation은 AWS 구축한 구성을 템플릿화하여 재사용하기 쉽게 해주는 서비스 (ex: 구축한 VPC 템플릿화 할시 재사용에 용이)
+- JSON 형식으로 작성된 템플릿 파일을 바탕으로 VPC, EC2 인스턴스 등을 생성 및 구축함. 이를 Stack이라함 
+- AWSTemplateFormatVersion : 템플릿의 버전
+- Description : 템플릿의 설명
+- Parameters : 스택생성시 넘겨줄 파라미터, 템플릿 내부에서 Ref함수로 참조, outputs와 조합하여 템플릿과 템플릿을 연결가능
+- Mappings : 해시 테이블 처럼 (키, 값)으로 구성가능하며, 리전마다 사용할 AMI를 다르게 하는 경우에 사용됨
+- Resources : 생성할 자원들을 정의함
+- Outputs : 템플릿으로 생성한 것의 결과를 출력함 (ex: VPC, SecurityGroup, E2C인스턴스, ELB IP 등을 출력할 때 사용)
+
 
 ### 참고사이트
 - https://www.megazone.com/techblog_20200416_testing-and-creating-ci-cd-pipelines-for-aws-step-functions-using-aws-codepipeline-and-aws-codebuild/
 - http://labs.brandi.co.kr/2019/04/08/yangjh.html
+- https://galid1.tistory.com/399
