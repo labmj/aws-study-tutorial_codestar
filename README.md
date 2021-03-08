@@ -1,4 +1,4 @@
-# aws-study-tutorial
+# aws-study-tutorial (CodeStar)
 
 ## 파이프라인
 ![image](https://user-images.githubusercontent.com/79297534/110262905-6d760480-7ff8-11eb-8a44-604301873a89.png)
