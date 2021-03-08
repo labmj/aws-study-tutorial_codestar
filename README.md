@@ -29,8 +29,17 @@
 
 ![image](https://user-images.githubusercontent.com/79297534/110264508-c9428c80-7ffc-11eb-9456-4963a5891abb.png)
 
-### 브랜치 생성 확인
+### 브랜치 생성 확인 및 브랜치 생성 : master, staging
 ![image](https://user-images.githubusercontent.com/79297534/110264982-d7dd7380-7ffd-11eb-9ccb-0be2097519ce.png)
+![image](https://user-images.githubusercontent.com/79297534/110265137-3a367400-7ffe-11eb-8dab-9af987e7f5f3.png)
+![image](https://user-images.githubusercontent.com/79297534/110265319-a1ecbf00-7ffe-11eb-87cc-99c5e947d464.png)
+
+### staging브랜치 output 변경
+![image](https://user-images.githubusercontent.com/79297534/110265439-e8421e00-7ffe-11eb-8012-1ea68441b3c7.png)
+![image](https://user-images.githubusercontent.com/79297534/110265536-1c1d4380-7fff-11eb-92e4-28d360bfd039.png)
+![image](https://user-images.githubusercontent.com/79297534/110265622-5555b380-7fff-11eb-88fa-7befc4d06362.png)
+
 
 ### 참고사이트
 - https://www.megazone.com/techblog_20200416_testing-and-creating-ci-cd-pipelines-for-aws-step-functions-using-aws-codepipeline-and-aws-codebuild/
+- http://labs.brandi.co.kr/2019/04/08/yangjh.html
