@@ -56,6 +56,20 @@
 - Resources : 생성할 자원들을 정의함
 - Outputs : 템플릿으로 생성한 것의 결과를 출력함 (ex: VPC, SecurityGroup, E2C인스턴스, ELB IP 등을 출력할 때 사용)
 
+### staging 브랜치용 CloudFormation 스택 추가
+- 기존 CloudFormation의 스택을 Designer로 열어 템플릿 탭의 코드 복사
+- 복사해온 코드에 Resources: LambdaExecutionRole: Properties: RoleName에 -stageing 문자 추가하여 S3 버킷에 저장 (S3 버킷 URL이 생성됨)
+- 생성된 URL을 넣어 새로운 CloudFormation 스택생성 
+- 파라미터 값은 스택명을 제외하고 기존의 스택 정보를 기입
+
+![image](https://user-images.githubusercontent.com/79297534/110279777-06b71200-801d-11eb-8021-5d6ed438bda5.png)
+![image](https://user-images.githubusercontent.com/79297534/110279830-1afb0f00-801d-11eb-9cc6-6ee4e01cffc6.png)
+![image](https://user-images.githubusercontent.com/79297534/110280235-d6bc3e80-801d-11eb-9e8c-ebf553c5a26e.png)
+![image](https://user-images.githubusercontent.com/79297534/110280123-a1175580-801d-11eb-9dcd-32c1a9ce4198.png)
+![image](https://user-images.githubusercontent.com/79297534/110280522-4b8f7880-801e-11eb-861e-765b0e06cb76.png)
+![image](https://user-images.githubusercontent.com/79297534/110281384-f8b6c080-801f-11eb-9efc-08b1fa743f90.png)
+![image](https://user-images.githubusercontent.com/79297534/110281719-94e0c780-8020-11eb-91d5-95010ac7d697.png)
+![image](https://user-images.githubusercontent.com/79297534/110281943-f739c800-8020-11eb-8059-ecb4bf26ea24.png)
 
 ### 참고사이트
 - https://www.megazone.com/techblog_20200416_testing-and-creating-ci-cd-pipelines-for-aws-step-functions-using-aws-codepipeline-and-aws-codebuild/
