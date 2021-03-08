@@ -70,6 +70,8 @@
 ![image](https://user-images.githubusercontent.com/79297534/110281384-f8b6c080-801f-11eb-9efc-08b1fa743f90.png)
 ![image](https://user-images.githubusercontent.com/79297534/110281719-94e0c780-8020-11eb-91d5-95010ac7d697.png)
 ![image](https://user-images.githubusercontent.com/79297534/110281943-f739c800-8020-11eb-8059-ecb4bf26ea24.png)
+![image](https://user-images.githubusercontent.com/79297534/110284547-51d52300-8025-11eb-88e5-9bd9a8c2e809.png)
+
 
 ### 참고사이트
 - https://www.megazone.com/techblog_20200416_testing-and-creating-ci-cd-pipelines-for-aws-step-functions-using-aws-codepipeline-and-aws-codebuild/
